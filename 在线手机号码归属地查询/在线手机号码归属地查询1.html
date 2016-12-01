@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.atool.org/" />
+<title>手机号码归属地查询</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">手机号码归属地查询</td></tr>
+</thead><tbody>
+<!--手机号归属地查询自动化测试脚本-->
+<!--打开在线手机号码归属地查询的网页-->
+<tr>
+	<td>open</td>
+	<td>/phonenumber.php</td>
+	<td></td>
+</tr>
+<!--北京移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13401001111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1340100',<br /> province:'北京',<br /> catName:'中国移动',<br /> telString:'13401001111',<br />	areaVid:'29400',<br />	ispVid:'3236139',<br />	carrier:'北京移动'<br />}</td>
+</tr>
+<!--北京联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13001001111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1300100',<br /> province:'北京',<br /> catName:'中国联通',<br /> telString:'13001001111',<br />	areaVid:'29400',<br />	ispVid:'137815084',<br />	carrier:'北京联通'<br />}</td>
+</tr>
+<!--北京电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>15301001111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1530100',<br /> province:'北京',<br /> catName:'中国电信',<br /> telString:'15301001111',<br />	areaVid:'29400',<br />	ispVid:'138238560',<br />	carrier:'北京电信'<br />}</td>
+</tr>
+<!--天津移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13820861111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1382086',<br /> province:'天津',<br /> catName:'中国移动',<br /> telString:'13820861111',<br />	areaVid:'29428',<br />	ispVid:'3236139',<br />	carrier:'天津移动'<br />}</td>
+</tr>
+<!--天津联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13163021111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1316302',<br /> province:'天津',<br /> catName:'中国联通',<br /> telString:'13163021111',<br />	areaVid:'29428',<br />	ispVid:'137815084',<br />	carrier:'天津联通'<br />}</td>
+</tr>
+<!--天津电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13388091111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1338809',<br /> province:'天津',<br /> catName:'中国电信',<br /> telString:'13388091111',<br />	areaVid:'29428',<br />	ispVid:'138238560',<br />	carrier:'天津电信'<br />}</td>
+</tr>
+<!--上海移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13681881111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1368188',<br /> province:'上海',<br /> catName:'中国移动',<br /> telString:'13681881111',<br />	areaVid:'29423',<br />	ispVid:'3236139',<br />	carrier:'上海移动'<br />}</td>
+</tr>
+<!--上海联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>18621921111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1862192',<br /> province:'上海',<br /> catName:'中国联通',<br /> telString:'18621921111',<br />	areaVid:'29423',<br />	ispVid:'137815084',<br />	carrier:'上海联通'<br />}</td>
+</tr>
+<!--上海电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>18017001111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1801700',<br /> province:'上海',<br /> catName:'中国电信',<br /> telString:'18017001111',<br />	areaVid:'29423',<br />	ispVid:'138238560',<br />	carrier:'上海电信'<br />}</td>
+</tr>
+<!--重庆移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13983861111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1398386',<br /> province:'重庆',<br /> catName:'中国移动',<br /> telString:'13983861111',<br />	areaVid:'29404',<br />	ispVid:'3236139',<br />	carrier:'重庆移动'<br />}</td>
+</tr>
+<!--重庆联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13271851111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1327185',<br /> province:'重庆',<br /> catName:'中国联通',<br /> telString:'13271851111',<br />	areaVid:'29404',<br />	ispVid:'137815084',<br />	carrier:'重庆联通'<br />}</td>
+</tr>
+<!--重庆电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>15340551111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1534055',<br /> province:'重庆',<br /> catName:'中国电信',<br /> telString:'15340551111',<br />	areaVid:'29404',<br />	ispVid:'138238560',<br />	carrier:'重庆电信'<br />}</td>
+</tr>
+<!--河北移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>15733101111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1573310',<br /> province:'河北',<br /> catName:'中国移动',<br /> telString:'15733101111',<br />	areaVid:'30499',<br />	ispVid:'3236139',<br />	carrier:'河北移动'<br />}</td>
+</tr>
+<!--河北联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>15603111111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1560311',<br /> province:'河北',<br /> catName:'中国联通',<br /> telString:'15603111111',<br />	areaVid:'30499',<br />	ispVid:'137815084',<br />	carrier:'河北联通'<br />}</td>
+</tr>
+<!--河北电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13333381111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1333338',<br /> province:'河北',<br /> catName:'中国电信',<br /> telString:'13333381111',<br />	areaVid:'30499',<br />	ispVid:'138238560',<br />	carrier:'河北电信'<br />}</td>
+</tr>
+<!--河南移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>18300661111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1830066',<br /> province:'河南',<br /> catName:'中国移动',<br /> telString:'18300661111',<br />	areaVid:'30500',<br />	ispVid:'3236139',<br />	carrier:'河南移动'<br />}</td>
+</tr>
+<!--河南联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13253591111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1325359',<br /> province:'河南',<br /> catName:'中国联通',<br /> telString:'13253591111',<br />	areaVid:'30500',<br />	ispVid:'137815084',<br />	carrier:'河南联通'<br />}</td>
+</tr>
+<!--河南电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>17719891111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'*',<br /> province:'河南',<br /> catName:'中国电信',<br /> telString:'*',<br />	areaVid:'*',<br />	ispVid:'*',<br />	carrier:'河南电信'<br />}</td>
+</tr>
+<!--云南移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>15987181111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1598718',<br /> province:'云南',<br /> catName:'中国移动',<br /> telString:'15987181111',<br />	areaVid:'30515',<br />	ispVid:'3236139',<br />	carrier:'云南移动'<br />}</td>
+</tr>
+<!--云南联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>15559601111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1555960',<br /> province:'云南',<br /> catName:'中国联通',<br /> telString:'15559601111',<br />	areaVid:'30515',<br />	ispVid:'137815084',<br />	carrier:'云南联通'<br />}</td>
+</tr>
+<!--云南联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>18187051111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'*',<br /> province:'云南',<br /> catName:'中国电信',<br /> telString:'*',<br />	areaVid:'*',<br />	ispVid:'*',<br />	carrier:'云南电信'<br />}</td>
+</tr>
+<!--辽宁移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13464001111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1346400',<br /> province:'辽宁',<br /> catName:'中国移动',<br /> telString:'13464001111',<br />	areaVid:'30498',<br />	ispVid:'3236139',<br />	carrier:'辽宁移动'<br />}</td>
+</tr>
+<!--辽宁联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13002401111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1300240',<br /> province:'辽宁',<br /> catName:'中国联通',<br /> telString:'13002401111',<br />	areaVid:'30498',<br />	ispVid:'137815084',<br />	carrier:'辽宁联通'<br />}</td>
+</tr>
+<!--辽宁电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13304001111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'*',<br /> province:'辽宁',<br /> catName:'中国电信',<br /> telString:'*',<br />	areaVid:'*',<br />	ispVid:'*',<br />	carrier:'辽宁电信'<br />}</td>
+</tr>
+<!--黑龙江移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13603601111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1360360',<br /> province:'黑龙江',<br /> catName:'中国移动',<br /> telString:'13603601111',<br />	areaVid:'30496',<br />	ispVid:'3236139',<br />	carrier:'黑龙江移动'<br />}</td>
+</tr>
+<!--黑龙江联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13204501111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1320450',<br /> province:'黑龙江',<br /> catName:'中国联通',<br /> telString:'13204501111',<br />	areaVid:'30496',<br />	ispVid:'137815084',<br />	carrier:'黑龙江联通'<br />}</td>
+</tr>
+<!--黑龙江电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13303601111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'1330360',<br /> province:'黑龙江',<br /> catName:'中国电信',<br /> telString:'13303601111',<br />	areaVid:'30496',<br />	ispVid:'138238560',<br />	carrier:'黑龙江电信'<br />}</td>
+</tr>
+<!--湖北移动-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13407101111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'*',<br /> province:'湖北',<br /> catName:'中国移动',<br /> telString:'*',<br />	areaVid:'*',<br />	ispVid:'*',<br />	carrier:'湖北移动'<br />}</td>
+</tr>
+<!--湖北联通-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13207101111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'*',<br /> province:'湖北',<br /> catName:'中国联通',<br /> telString:'*',<br />	areaVid:'*',<br />	ispVid:'*',<br />	carrier:'湖北联通'<br />}</td>
+</tr>
+<!--湖北电信-->
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>13307101111</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.form_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=pre</td>
+	<td>{<br /> mts:'*',<br /> province:'湖北',<br /> catName:'中国电信',<br /> telString:'*',<br />	areaVid:'*',<br />	ispVid:'*',<br />	carrier:'湖北电信'<br />}</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
