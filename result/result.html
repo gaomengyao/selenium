@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.processon.com/" />
+<title>两数求和</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<!--计算两个数求和-->
+<!--方案一：无效-->
+<tr>
+	<td>echo</td>
+	<td>5+5</td>
+	<td></td>
+</tr>
+<!--方案二：storeEval-->
+<tr>
+	<td>storeEval</td>
+	<td>5+5</td>
+	<td>result</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${result}</td>
+	<td></td>
+</tr>
+<!--方案三：storedvars 数据（结果  55）-->
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>num1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars[&quot;num1&quot;]+storedVars[&quot;num2&quot;]</td>
+	<td>result2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${result2}</td>
+	<td></td>
+</tr>
+<!--方案三：storedvars 数据（改进）-->
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>num1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>5</td>
+	<td>num2</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Number(storedVars[&quot;num1&quot;])+Number(storedVars[&quot;num2&quot;])</td>
+	<td>result3</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${result3}</td>
+	<td></td>
+</tr>
+<!--方案四：隐式JavaScript参数-->
+<tr>
+	<td>echo</td>
+	<td>javascript{Number(storedVars[&quot;num1&quot;])+Number(storedVars[&quot;num2&quot;])}</td>
+	<td></td>
+</tr>
+<!--方案五：runScript命令-->
+<tr>
+	<td>runScript</td>
+	<td>javascript{var a=5;var b=5;alert(&quot;a+b=&quot;+(a+b))}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{alert(&quot;num1+num2=&quot;+(Number(storedVars[&quot;num1&quot;])+Number(storedVars[&quot;num2&quot;])))}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
