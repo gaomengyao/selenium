@@ -1,0 +1,5 @@
+<testdata>
+  <test username="test_2016_1" password="123" />
+  <test username="test_2016_2" password="passwOrd!" />
+  <test username="test_2016_1" password="passwOrd!" />
+</testdata>

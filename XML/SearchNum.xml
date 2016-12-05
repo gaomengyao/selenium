@@ -1,0 +1,16 @@
+<testdata>
+  <test number="user_id-12013438.html" />
+  <test number="13401001111"
+        result="{\n mts:'1340100',\n province:'北京',\n catName:'中国移动',\n telString:'13401001111',\n	areaVid:'29400',\n	ispVid:'3236139',\n	carrier:'北京移动'\n}"/>
+  <test number="13001001111"
+        result="{\n mts:'1300100',\n province:'北京',\n catName:'中国联通',\n telString:'13001001111',\n	areaVid:'29400',\n	ispVid:'137815084',\n	carrier:'北京联通'\n}"/>
+  <test number="15301001111"
+        result="{\n mts:'1530100',\n province:'北京',\n catName:'中国电信',\n telString:'15301001111',\n	areaVid:'29400',\n	ispVid:'138238560',\n	carrier:'北京电信'\n}"/>
+  <test number="13820861111"
+        result="{\n mts:'1382086',\n province:'天津',\n catName:'中国移动',\n telString:'13820861111',\n	areaVid:'29428',\n	ispVid:'3236139',\n	carrier:'天津移动'\n}"/>
+  <test number="13163021111"
+        result="{\n mts:'1316302',\n province:'天津',\n catName:'中国联通',\n telString:'13163021111',\n	areaVid:'29428',\n	ispVid:'137815084',\n	carrier:'天津联通'\n}"/>
+  <test number="13388091111"
+        result="{\n mts:'1338809',\n province:'天津',\n catName:'中国电信',\n telString:'13388091111',\n	areaVid:'29428',\n	ispVid:'138238560',\n	carrier:'天津电信'\n}"/>
+
+</testdata>

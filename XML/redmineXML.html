@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.hostedredmine.com/" />
+<title>hostedredmine</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">hostedredmine</td></tr>
+</thead><tbody>
+<tr>
+	<td>loadTestData</td>
+	<td>file:///C:/selenium/XML/redmine.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>tota1Len</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>pass</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>!testdata.EOF()</td>
+	<td></td>
+</tr>
+<tr>
+	<td>nextTestData</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>${username}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<!--判断流程-->
+<tr>
+	<td>storeLocation</td>
+	<td>curURL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars[&quot;curURL&quot;] == &quot;http://www.hostedredmine.com/login&quot;</td>
+	<td>LOGIN_FAIL</td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>我的工作台 - Online Project Management :: Free Redmine Hosting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>我的工作台 - Online Project Management :: Free Redmine Hosting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=loggedas</td>
+	<td>登录为 ${username}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=退出</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>LOGIN_FAIL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${username},${password},&quot;LOGIN_FAIL&quot;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Number(storedVars['totalLen']) + Number(storedVars['len'])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${pass}+1</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
